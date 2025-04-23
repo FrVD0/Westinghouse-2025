@@ -1,0 +1,117 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .gallery {
+    display: grid;
+    /* as many 200px‑wide squares as will fit, with 20px gaps */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .gallery-item {
+    /* make each grid cell a perfect square */
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+  }
+  
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery-item:hover img {
+    transform: scale(1.05);
+  }
+  figure.artwork {
+    display: inline-block;       /* shrink‐wrap to image width */
+    margin: 0;                   /* or whatever gutter you like */
+  }
+  
+  figure.artwork img {
+    display: block;              /* remove inline white‐space */
+    width: 100%;
+    height: auto;
+  }
+  
+  figure.artwork figcaption {
+    font-size: 0.8em;            /* smaller than base text */
+    line-height: 1.3;            
+    text-align: justify;         /* fully‐justified lines */
+    margin-top: 0.25em;          /* a little breathing room */
+  }
+  
+
+  .caption {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 1.1em;
+  }
+  
+  .detail {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .detail-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .poem {
+    text-align: center;
+    margin: 20px auto;
+    max-width: 600px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+  }  
+  .play-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .play-button:hover {
+    opacity: 0.8;
+  }
+  
+  .navigation {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .nav-button {
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+  
+  .nav-button:hover {
+    background-color: #bbb;
+  }
+  
