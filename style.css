@@ -76,12 +76,13 @@ body {
   }
   
   .poem {
-    text-align: center;
-    margin: 20px auto;
-    max-width: 600px;
-    line-height: 1.6;
-    white-space: pre-wrap;
-  }  
+  max-width: 600px;     
+  margin: 1.5em auto;    
+  text-align: left;      
+  line-height: 1.6;      
+  font-family: Arial, sans-serif;
+}
+
   .play-button {
     background-color: #007bff;
     color: #fff;
